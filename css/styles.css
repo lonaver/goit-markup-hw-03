@@ -1,0 +1,204 @@
+:root {
+  /* кольори Studio і Portfolio сторінка */
+  --color-logo-black: rgba(0, 0, 0, 1);
+
+  --color-blue: rgba(33, 150, 243, 1);
+  --color-text-header: rgba(33, 33, 33, 1);
+  --color-text-prime: rgba(117, 117, 117, 1);
+  --color-text-adress: rgba(255, 255, 255, 0.6);
+
+  --color-background-black: rgba(47, 48, 58, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-background-grey: rgba(245, 244, 250, 1);
+  /* кольори Portfolio сторінка */
+  --color-radiobutton: rgba(245, 244, 250, 1);
+  /* шрифти*/
+  /*   шрифт лого
+  font-family: 'Raleway';
+  font-weight: 700;
+
+  шрифт сторінки студио
+  font-family: Roboto;
+  font-weight: 400,500,700,900;
+ */
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-text-prime);
+  font-family: "Roboto", sans-serif;
+  /* font-style: normal;*/
+  /*font-weight: 400;*/
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+}
+.our_command {
+  background-color: var(--color-background-grey);
+}
+/* ховаємо заголовки */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.primary_title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: var(--color-text-header);
+}
+/*h2 in our_priority*/
+.title_secondary {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/*h3 in our_priority*/
+.our_priority_subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/*h3 in our_command*/
+.our_command_subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+}
+/*h3 in list_work*/
+.list_work_subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/*p */
+.text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.profession,
+.work_direction {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.navigation .link,
+.adress_head .link {
+  color: var(--color-text-header);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.navigation .link:hover,
+.navigation .link:focus,
+.footer_address .link:hover,
+.footer_address .link:focus {
+  color: var(--color-blue);
+}
+
+.navigation .link.current {
+  color: var(--color-blue);
+}
+
+.filter .link,
+.adress_head .link {
+  color: var(--color-text-prime);
+}
+.adress_head .link:hover,
+.adress_head .link:focus {
+  color: var(--color-blue);
+}
+.logo_blue,
+.logo_black,
+.logo_white {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+}
+
+.logo_blue {
+  color: var(--color-blue);
+}
+.logo_black {
+  color: var(--color-logo-black);
+}
+.logo_white {
+  color: var(--color-white);
+}
+
+.hero {
+  background-color: var(--color-background-black);
+  color: var(--color-white);
+}
+.button {
+  font-family: inherit;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+}
+.radio-button {
+  font-family: inherit;
+  background-color: var(--color-radiobutton);
+  color: var(--color-text-header);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+.radio-button:hover,
+.radio-button:focus {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+.radio-button,
+.button {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--color-background-black);
+}
+
+.footer_address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--color-white);
+}
+.footer_address .link {
+  color: var(--color-text-adress);
+}
