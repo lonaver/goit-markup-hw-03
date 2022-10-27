@@ -1,7 +1,7 @@
 :root {
   /* кольори Studio і Portfolio сторінка */
   --color-logo-black: rgba(0, 0, 0, 1);
-
+  --color-border-bottom-header: rgba(236, 236, 236, 1);
   --color-blue: rgba(33, 150, 243, 1);
   --color-text-header: rgba(33, 33, 33, 1);
   --color-text-prime: rgba(117, 117, 117, 1);
@@ -12,6 +12,7 @@
   --color-background-grey: rgba(245, 244, 250, 1);
   /* кольори Portfolio сторінка */
   --color-radiobutton: rgba(245, 244, 250, 1);
+  --color-border-list-img: rgba(238, 238, 238, 1);
   /* шрифти*/
   /*   шрифт лого
   font-family: 'Raleway';
@@ -48,7 +49,12 @@ p {
   list-style: none;
 }
 /*reset*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 
+  border-bottom: 1px solid var(--color-border-bottom-header);
+}
 .container_header {
   display: flex;
   justify-content: flex-start;
@@ -58,9 +64,12 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-left: 15px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-right: 15px;
+  /*padding-top: 24px;
+  padding-bottom: 25px; */
   /* outline: 2px solid tomato; */
 }
 
@@ -72,21 +81,29 @@ p {
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 200px;
   padding-bottom: 200px;
   /* outline: 2px solid tomato; */
 }
 
 .container {
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 0px;
   padding-bottom: 0px;
   /* outline: 2px solid tomato; */
+}
+.our_priority,
+.our_work,
+.our_command,
+.filter {
+  padding-top: 94px;
 }
 
 /* ховаємо заголовки */
@@ -233,12 +250,19 @@ p {
   text-align: center;
 }
 
+.img_list > .item {
+  border: 1px solid var(--color-border-list-img);
+}
 /*h3 in list_work*/
 .list_work_subtitle {
+  color: var(--color-text-header);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 /*p */
@@ -247,10 +271,15 @@ p {
   line-height: 1.71;
 }
 
-.profession,
-.work_direction {
+.profession {
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.work_direction {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 .link {
@@ -346,21 +375,24 @@ p {
 }
 
 .button {
-  font-family: inherit;
   background-color: var(--color-blue);
   color: var(--color-white);
+
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   border-color: transparent;
 
   /* identical to box height, or 188% */
 }
 .radio-button {
-  font-family: inherit;
   background-color: var(--color-radiobutton);
   color: var(--color-text-header);
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -384,7 +416,7 @@ p {
 }
 
 .img_list_title {
-  display: inline-block;
+  /* display: inline-block; */
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 20px;
@@ -392,21 +424,29 @@ p {
 }
 /* footer */
 .container_footer {
-  margin-top: 94px;
+  margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
   /* outline: 2px solid tomato; */
 }
 
 .footer {
-  padding-top: 0;
+  padding-top: 94;
   padding-bottom: 0;
   background-color: var(--color-background-black);
+}
+
+.item_list_footer {
+  margin-bottom: 9px;
+}
+.item_list_footer:last-child {
+  margin-bottom: 0px;
 }
 
 .footer_link {
